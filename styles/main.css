@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Itim&display=swap");
+* {
+  -webkit-box-ordinal-group: 2 !important;
+      -ms-flex-order: 1px solid red !important;
+          order: 1px solid red !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 5rem 0;
+  padding: 0;
+  position: relative;
+  background: #fafafa;
+  font-family: "Comfortaa", cursive;
+}
+
+@media (max-width: 460px) {
+  #home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5rem;
+    padding: 1.8rem 0;
+    background: #e6e6e6;
+  }
+  #home header {
+    padding: 2rem 1rem;
+  }
+  #home header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #135bbf;
+  }
+  #home section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    padding: 5rem 1rem;
+    width: 80%;
+    background: white;
+    border: 1px solid #4d4d4d;
+    border-radius: 0.8rem;
+  }
+  #home section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #13bf69;
+  }
+  #home section p {
+    font-weight: 500;
+    text-align: center;
+    color: #bf1321d2;
+  }
+  #home section span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #home section span .btn1 {
+    border: 2px solid  #13bf69;
+    border-radius: 0.2rem;
+    height: 1.7rem;
+    width: 5rem;
+    background: transparent;
+    color: #4d4d4d;
+  }
+  #home section span .btn1:hover,
+  #home section span :focus {
+    background: #13bf69;
+    color: white;
+    outline: 1px solid transparent;
+  }
+  #home.hide {
+    display: none;
+  }
+  .page2,
+  .page3,
+  .page4 {
+    display: none;
+    padding: 4rem 2rem;
+    background: #e6e6e6;
+  }
+  .page2 h4,
+  .page3 h4,
+  .page4 h4 {
+    width: 100%;
+    height: 8rem;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #135bbf;
+  }
+  .page2 h5,
+  .page3 h5,
+  .page4 h5 {
+    color: #13bf69;
+  }
+  .page2 p,
+  .page3 p,
+  .page4 p {
+    font-size: 1rem;
+    color: #bf1321e0;
+  }
+  .page2 span,
+  .page3 span,
+  .page4 span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: .5rem;
+    padding: .7rem 0;
+  }
+  .page2 span .myInput,
+  .page3 span .myInput,
+  .page4 span .myInput {
+    border: 0.2px solid #4d4d4d;
+    border-radius: .4rem;
+  }
+  .page2 span .myInput:hover, .page2 span :focus,
+  .page3 span .myInput:hover,
+  .page3 span :focus,
+  .page4 span .myInput:hover,
+  .page4 span :focus {
+    outline: transparent;
+    background: #fafafa;
+  }
+  .page2 span .submit,
+  .page3 span .submit,
+  .page4 span .submit {
+    border: 2px solid  #13bf69;
+    border-radius: .29rem;
+    background: #fcfcfc;
+  }
+  .page2 span .submit:hover, .page2 span :focus,
+  .page3 span .submit:hover,
+  .page3 span :focus,
+  .page4 span .submit:hover,
+  .page4 span :focus {
+    outline: transparent;
+    background: #13bf69;
+    color: #e6e6e6;
+  }
+  .page2 .next,
+  .page3 .next,
+  .page4 .next {
+    width: 5rem;
+    height: 1.7rem;
+    margin-left: auto;
+    margin-top: 2rem;
+    border: none;
+    border-radius: .25rem;
+    background: #13bf69;
+    text-align: center;
+    color: white;
+    font-family: "Comfortaa", cursive;
+  }
+  .page2 .next:hover, .page2 :focus,
+  .page3 .next:hover,
+  .page3 :focus,
+  .page4 .next:hover,
+  .page4 :focus {
+    outline: 1px solid #13bf69;
+    background: white;
+    color: #1a1a1a;
+  }
+  .page2.show,
+  .page3.show,
+  .page4.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page2.hide,
+  .page3.hide,
+  .page4.hide {
+    display: none;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 2rem;
+    color: #135bbf;
+  }
+}
+/*# sourceMappingURL=main.css.map */

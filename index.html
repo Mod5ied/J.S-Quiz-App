@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz app</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <main class="page1" id="home">
+      <header>
+        <h1>NOBLES ODDYSSEY</h1>
+      </header>
+      <section>
+        <h3>New User?</h3>
+        <p>Select Quiz:</p>
+        <span>
+          <button class="btn1" id="toggle" onclick="return pageRelocator()">
+            Fruits
+          </button>
+          <button class="btn1" disabled="disabled">Noble</button>
+        </span>
+      </section>
+    </main>
+
+    <article class="page2" id="page2">
+      <h4>FRUITS (01)</h4>
+      <h5>Do You Have What It Takes To Beat This Challenge?</h5>
+      <p>Name a Citrus fruit you know..</p>
+      <span>
+        <input type="text" id="myInput" class="myInput" required />
+        <input type="submit" class="submit" onclick="fruitChecker()" />
+      </span>
+      <button id="toggle2" class="next" onclick="return pageRelocator2()">Next</button>
+      <p id="output"></p>
+    </article>
+
+    <article class="page3" id="page3">
+      <h4>FRUITS (02)</h4>
+      <h5>Its Impressive That You Haven't Quit Already</h5>
+      <p>What do you think is Noble's Favorite Fruit?</p>
+      <span>
+        <input type="text" id="myInput2" class="myInput" required />
+        <input type="submit" class="submit" onclick="fruitChecker2()" />
+      </span>
+      <button id="toggle3" class="next" onclick="pageRelocator3()">Next</button>
+      <p id="output2"></p>
+    </article>
+
+    <article class="page4" id="page4">
+      <h4>FRUITS (03)</h4>
+      <h5>One More And We're Done, Hope its Not You</h5>
+      <p>What Fruit Is Called Chinese Gooseberry?</p>
+      <span>
+        <input type="text" id="myInput3" class="myInput" required />
+        <input type="submit" class="submit" onclick="fruitChecker3()" />
+      </span>
+      <button id="toggle4" class="next" onclick="pageRelocator4()">Next</button>
+      <p id="output3"></p>
+    </article>
+    <footer>
+      <p>Fun Projects by Noble</p>
+      <p>&copy; 2020 Noble-Projs.</p>
+    </footer>
+  </body>
+  <script src="./main.js"></script>
+</html>
